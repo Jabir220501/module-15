@@ -1,5 +1,4 @@
 import React from 'react';
-import '../MovieDetails/MovieDetails.css';
 
 function MovieDetails() {
   return (
@@ -7,13 +6,13 @@ function MovieDetails() {
       <nav>
         <div className="nav__left">
           <div className="nav__logo">
-            <a href="#"><img src="https://www.example.com/placeholder-image.jpg" alt="logo" /></a>
+            <a href="#"><img src="" alt="logo" /></a>
           </div>
           <span><a href="#">Browse</a></span>
         </div>
         <div className="nav__right">
           <a href="#"><i className="ri-notification-3-fill"></i></a>
-          <img src="https://www.example.com/placeholder-image.jpg" alt="User" className="nav__user" />
+          <img src="" alt="User" className="nav__user" />
         </div>
       </nav>
       <header>
