@@ -9,7 +9,11 @@ const App = () => {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
+<<<<<<< HEAD
         <Route path="/moviedetails" element={<MovieDetails />} />
+=======
+        <Route path="/movie" element={<MovieDetails />} />
+>>>>>>> 33ed69e400f20c9d4736e325d24b799edc235062
       </Routes>
     </Router>
   );
