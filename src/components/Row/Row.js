@@ -1,8 +1,10 @@
+// Row.js
 import React, { useEffect, useState } from "react";
 import axios from "../../service/api.js";
+import { getFavoriteMovies } from "../../utils/localStorage.js";
 import "./Row.css";
 
-function Row({ title, fetchUrl, isLargeRow = false }) {
+function Row({ title, fetchUrl, isLargeRow = false, isFavorite = false }) {
   const [movies, setMovies] = useState([]);
 
   const base_url = "https://image.tmdb.org/t/p/original/";
@@ -10,15 +12,23 @@ function Row({ title, fetchUrl, isLargeRow = false }) {
   useEffect(() => {
     async function fetchData() {
       try {
-        const request = await axios.get(fetchUrl);
-        setMovies(request.data.results);
-        return request;
+        let moviesData;
+
+        if (isFavorite) {
+          moviesData = getFavoriteMovies();
+        } else {
+          const request = await axios.get(fetchUrl);
+          moviesData = request.data.results;
+        }
+
+        setMovies(moviesData);
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     }
+
     fetchData();
-  }, [fetchUrl]);
+  }, [fetchUrl, isFavorite]);
 
   console.log(movies);
 
