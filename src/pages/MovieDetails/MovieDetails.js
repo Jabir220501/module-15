@@ -1,5 +1,5 @@
 import React from 'react';
-import '../MovieDetails/MovieDetails.css';
+// import '../MovieDetails/MovieDetails.css';
 
 function MovieDetails() {
   return (
