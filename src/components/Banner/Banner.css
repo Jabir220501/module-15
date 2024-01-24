@@ -50,6 +50,10 @@
     padding-bottom: 0.5rem;
 }
 
+.banner__button_active{
+    background-color: red;
+}
+
 .banner__button:hover {
     color: #000;
     background-color: #e6e6e6;
