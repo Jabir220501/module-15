@@ -30,8 +30,6 @@ function Row({ title, fetchUrl, isLargeRow = false, isFavorite = false }) {
     fetchData();
   }, [fetchUrl, isFavorite]);
 
-  console.log(movies);
-
   return (
     <div className="row">
       <h2>{title}</h2>
