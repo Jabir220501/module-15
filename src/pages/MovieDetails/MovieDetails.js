@@ -78,9 +78,6 @@ function MovieDetails() {
             {isFavorite ? "Already on My List" : "My List"}
           </button>
         </div>
-          <div className="title__details">
-            <span>2018</span>|<span>2 Seasons</span>|<span>16+</span>
-          </div>
           <div className="show__about">
             {truncate(`${movie.overview}`, 150)}
           </div>

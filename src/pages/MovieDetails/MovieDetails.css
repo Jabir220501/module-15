@@ -79,14 +79,6 @@ body {
   color: yellow;
 }
 
-.title__details {
-  color: var(--text-light);
-}
-
-.title__details span {
-  padding: 0 1rem;
-}
-
 
 .show__about {
   font-size: 0.9rem;
